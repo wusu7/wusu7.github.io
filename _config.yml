@@ -1,129 +1,206 @@
-# Welcome to Jekyll!
+# Jekyll 설정 파일
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# 이 파일은 사이트 전체에 적용되는 전역 설정을 모아둔 곳입니다.
+# 자주 바뀌지 않는 값들을 여기에 넣고, 글/페이지별 값은 Front Matter에서 따로 지정합니다.
+# 참고: `jekyll serve` 실행 중에는 이 파일이 자동으로 다시 로드되지 않으므로,
+# 값을 바꾼 뒤에는 개발 서버를 재시작해야 합니다.
 
-# Theme Settings
+# 테마 설정
 #
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+# `theme` 또는 `remote_theme` 중 하나만 사용합니다.
+# 설치 방식에 맞는 값을 활성화하세요.
+# 문서: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+#
+# 예시 1) gem 방식
+# theme                  : "minimal-mistakes-jekyll"
+#
+# 예시 2) GitHub Pages + remote_theme 방식
+# remote_theme           : "mmistakes/minimal-mistakes"
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
+minimal_mistakes_skin    : "aqua" # 사이트 스킨. 사용 가능: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
 
-# Site Settings
-locale                   : "en-US"
-rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : "https://wusu7.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : # true, false (default)
-words_per_minute         : 200
-enable_copy_code_button  : # true, false (default)
-copyright                : # "copyright" name, defaults to site.title
-copyright_url            : # "copyright" URL, defaults to site.url
+# 사이트 기본 정보
+#
+# 예시:
+# locale                 : "ko-KR"
+# title                  : "우수의 개발 노트"
+# subtitle               : "개발, 실험, 메모"
+# name                   : "wusu"
+# description            : "프론트엔드와 개발 메모를 정리하는 개인 사이트"
+# url                    : "https://wusu7.github.io"
+# baseurl                : ""          # 사용자 페이지면 보통 비움
+# baseurl                : "/blog"     # 프로젝트 페이지면 보통 저장소 이름
+locale                   : "en-US" # 사이트 기본 언어/로캘. 한국어 사이트라면 "ko-KR" 권장
+rtl                      : # 오른쪽에서 왼쪽으로 읽는 언어용. 한국어/영어 사이트는 보통 비움 또는 false
+title                    : "Site Title" # 사이트 기본 제목
+title_separator          : "-" # HTML title에서 제목 사이를 구분하는 문자
+subtitle                 : # 상단 masthead 아래에 표시할 부제
+name                     : "Your Name" # 사이트 운영자/작성자 이름
+description              : "An amazing website." # SEO용 설명 문구
+url                      : "https://wusu7.github.io" # 최종 배포 주소. 로컬 주소(http://localhost)는 넣지 않음
+baseurl                  : # 사이트가 서브 경로에 배포될 때 사용. 예: "/blog"
+repository               : # GitHub 저장소. 예: "wusu7/wusu7.github.io"
+teaser                   : # 기본 티저 이미지 경로. 예: "/assets/images/500x300.png"
+logo                     : # 상단 로고 이미지 경로. 예: "/assets/images/logo.png"
+masthead_title           : # 상단에 표시할 제목을 별도로 지정. 제목을 숨기려면 " " 사용
+breadcrumbs              : # true, false (기본값 false) # 글/페이지 상단 경로 표시 여부
+words_per_minute         : 200 # 읽기 시간 계산용 분당 단어 수
+enable_copy_code_button  : # true, false (기본값 false) # 코드 블록 복사 버튼 표시
+copyright                : # 저작권 표시에 쓸 이름. 비우면 site.title 사용
+copyright_url            : # 저작권 이름에 연결할 URL. 비우면 site.url 사용
+
+# 댓글 설정
+#
+# provider 선택지:
+# false (기본값), "disqus", "discourse", "facebook", "staticman",
+# "staticman_v2", "utterances", "giscus", "custom"
+#
+# 예시 1) Giscus
+# comments:
+#   provider: "giscus"
+#   giscus:
+#     repo_id: "R_kgDOExample"
+#     category_name: "Announcements"
+#     category_id: "DIC_kwDOExample4C..."
+#     discussion_term: "pathname"
+#     reactions_enabled: '1'
+#     theme: "light"
+#
+# 예시 2) Disqus
+# comments:
+#   provider: "disqus"
+#   disqus:
+#     shortname: "my-blog-shortname"
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : # 사용할 댓글 시스템
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : # Disqus shortname. 안내: https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server               : # Discourse 서버 주소. 예: meta.discourse.org
   facebook:
-    # https://developers.facebook.com/docs/plugins/comments
+    # 문서: https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            : # 기본 5개
+    colorscheme          : # "light" (기본값), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme                : # "github-light" (기본값), "github-dark"
+    issue_term           : # "pathname" (기본값)
   giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-    strict               : # 1 for enabled, 0 for disabled (default)
-    input_position       : # "top", "bottom" # The comment input box will be placed above or below the comments
-    emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
-    lang                 : # "en" (default)
-    lazy                 : # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
+    repo_id              : # https://giscus.app 설정 과정에서 표시되는 값
+    category_name        : # 카테고리의 전체 이름
+    category_id          : # https://giscus.app 설정 과정에서 표시되는 값
+    discussion_term      : # "pathname" (기본값), "url", "title", "og:title"
+    reactions_enabled    : # '1' 활성화 (기본값), '0' 비활성화
+    theme                : # "light" (기본값), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    strict               : # 1 활성화, 0 비활성화 (기본값)
+    input_position       : # "top", "bottom" # 입력창 위치
+    emit_metadata        : # 1 활성화, 0 비활성화 (기본값) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
+    lang                 : # 댓글 UI 언어. 예: "ko", "en"
+    lazy                 : # true, false # 댓글 영역 근처로 스크롤될 때까지 로딩 지연
   staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    branch               : # 예: "master" 또는 "main"
+    endpoint             : # 예: "https://{your Staticman v3 API}/v3/entry/github/"
+
+# reCAPTCHA 설정
+# 댓글 폼 스팸 방지가 필요할 때 사용합니다.
 reCaptcha:
   siteKey                :
   secret                 :
+
+# Atom/RSS 피드 설정
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+  path                   : # 비우면 기본값 feed.xml 사용
+  hide                   : # true, false (기본값 false) # 피드 링크 숨김 여부
+
+# 검색 설정
+#
+# 예시:
+# search                 : true
+# search_provider        : "lunr"
+search                   : # true, false (기본값 false)
+search_full_content      : # true, false (기본값 false) # 검색 인덱스에 본문 전체 포함 여부
+search_provider          : # "lunr" (기본값), "algolia", "google"
 lunr:
-  search_within_pages    : # true, false (default)
+  search_within_pages    : # true, false (기본값) # 일반 페이지도 검색 대상에 포함
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  powered_by             : # true (기본값), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
+  instant_search         : # false (기본값), true
+
+# SEO 관련 인증 코드
+# 각 검색엔진 웹마스터 도구에서 발급받은 값을 넣습니다.
 google_site_verification :
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
-# Social Sharing
+# 소셜 공유 메타데이터
 twitter:
-  username               :
+  username               : # 예: "your_id" (앞의 @ 없이)
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
-og_image_alt             : # Alt text for Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+og_image                 : # Open Graph/Twitter 기본 대표 이미지
+og_image_alt             : # 대표 이미지 대체 텍스트
 
-# Analytics
+# 구조화 데이터용 소셜 프로필
+# 참고: https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person 또는 Organization (기본값 Person)
+  name                   : # 사이트 이름과 다를 때만 별도로 지정
+  links: # 소셜 프로필 URL 배열
+    # 예시:
+    # - "https://github.com/wusu7"
+    # - "https://twitter.com/your_id"
+
+# 방문자 분석 도구 설정
+#
+# 예시:
+# analytics:
+#   provider: "google-gtag"
+#   google:
+#     tracking_id: "G-XXXXXXXXXX"
+#     anonymize_ip: true
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : # false (기본값), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
-    anonymize_ip         : # true, false (default)
+    anonymize_ip         : # true, false (기본값)
 
 
-# Site Author
+# 작성자 정보
+#
+# 이 값들은 작성자 프로필, 메타 태그, 사이드바 등에 사용됩니다.
+# 예시:
+# author:
+#   name: "wusu"
+#   avatar: "/assets/images/bio-photo.jpg"
+#   bio: "프론트엔드와 AI 관련 기록을 남깁니다."
+#   location: "Seoul, Korea"
+#   email: "hello@example.com"
 author:
   name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : # 프로필 이미지 경로. 예: "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
   email            :
-  # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
+  # fediverse      : "@you@instance.social"  # fediverse:creator 메타 태그에 사용
   links:
+    # 예시:
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/your-id"
     - label: "Email"
       icon: "fas fa-fw fa-square-envelope"
-      # url: "mailto:your.name@email.com"
+      # url: "mailto:your.name@email.com" # 예: "mailto:hello@example.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -140,13 +217,21 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
-# Site Footer
+# 사이트 하단 푸터 링크
+#
+# 예시:
+# footer:
+#   links:
+#     - label: "GitHub"
+#       icon: "fab fa-fw fa-github"
+#       url: "https://github.com/wusu7"
+#   since: "2024"
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-square-x-twitter"
       # url:
-      # rel: "me"  # optional: adds rel attribute (e.g. for IndieWeb web sign-in)
+      # rel: "me"  # 선택 사항: IndieWeb 웹 사인인 등에 사용
     - label: "Facebook"
       icon: "fab fa-fw fa-square-facebook"
       # url:
@@ -162,10 +247,11 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-  since: "2013"
+  since: "2013" # 푸터 연도 범위의 시작 연도
 
 
-# Reading Files
+# 읽을 파일 / 제외할 파일
+# Jekyll 빌드 대상과 제외 대상을 설정합니다.
 include:
   - .htaccess
   - _pages
@@ -195,24 +281,24 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+  - /docs # Minimal Mistakes 기본 문서 폴더는 빌드에서 제외
+  - /test # Minimal Mistakes 기본 테스트 폴더는 빌드에서 제외
 keep_files:
   - .git
   - .svn
 encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md" # 마크다운 파일로 인식할 확장자 목록
 
 
-# Conversion
+# 변환 관련 설정
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: "\n\n" # 요약문 분리 기준. 글에서 이 구분자 앞부분이 excerpt가 됨
 incremental: false
 
 
-# Markdown Processing
+# Markdown 처리 설정
 kramdown:
   input: GFM
   hard_wrap: false
@@ -224,26 +310,29 @@ kramdown:
   enable_coderay: false
 
 
-# Sass/SCSS
+# Sass/SCSS 설정
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # 출력 스타일. 압축본으로 생성
 
 
-# Outputting
+# 출력 URL 설정
+#
+# 예시:
+# permalink: /:categories/:title/
+# permalink: /:title/
 permalink: /:categories/:title/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: # 예: "Asia/Seoul" # 날짜/시간 표시용 타임존
 
 
-# Pagination with jekyll-paginate
-paginate: 5 # amount of posts to show
+# jekyll-paginate 페이지네이션
+paginate: 5 # 홈 목록 등에 한 페이지당 표시할 글 수
 paginate_path: /page:num/
 
-# Pagination with jekyll-paginate-v2
-# See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
-#   for configuration details
+# jekyll-paginate-v2 페이지네이션
+# 문서: https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 pagination:
-  # Set enabled to true to use paginate v2
+  # enabled를 true로 바꾸면 paginate v2를 사용합니다.
   # enabled: true
   debug: false
   collection: 'posts'
@@ -261,7 +350,8 @@ pagination:
     after: 2
 
 
-# Plugins (previously gems:)
+# 플러그인 목록
+# GitHub Pages 호환을 위해 필요한 플러그인만 유지하는 편이 안전합니다.
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -269,7 +359,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# mimic GitHub Pages with --safe
+# GitHub Pages의 --safe 환경을 흉내 내는 허용 목록
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
@@ -278,24 +368,28 @@ whitelist:
   - jekyll-include-cache
 
 
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
+# 아카이브 설정
+# type:
+# - liquid           : GitHub Pages 호환 방식 (기본값)
+# - jekyll-archives  : jekyll-archives 플러그인 방식
+#
+# path 예시:
+# - /tags/
+# - /categories/
+# - /
+#
+# 참고:
+# breadcrumb를 켠 경우, 아카이브 페이지가 실제로 존재하는 경로와 path가 맞지 않으면
+# 링크가 깨질 수 있습니다.
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-# show_taxonomy: false  # set to false to hide tag/category lists on posts
-# https://github.com/jekyll/jekyll-archives
+# show_taxonomy: false  # 글 하단 태그/카테고리 목록을 숨기고 싶을 때 사용
+#
+# jekyll-archives 사용 예시
 # jekyll-archives:
 #   enabled:
 #     - categories
@@ -308,15 +402,19 @@ tag_archive:
 #     tag: /tags/:name/
 
 
-# HTML Compression
-# - https://jch.penibelst.de/
+# HTML 압축 설정
+# 참고: https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
-    envs: development
+    envs: development # 개발 환경에서는 압축하지 않음
 
 
-# Defaults
+# 기본 Front Matter 설정
+# 별도 지정이 없을 때 자동으로 적용될 기본값입니다.
+#
+# 예시:
+# - 모든 post에 single 레이아웃, 공유 버튼, 관련 글 표시를 기본 적용
 defaults:
   # _posts
   - scope:
@@ -329,4 +427,3 @@ defaults:
       comments: # true
       share: true
       related: true
-

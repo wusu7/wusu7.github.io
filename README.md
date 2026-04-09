@@ -1,13 +1,13 @@
-# [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
+# [Minimal Mistakes Jekyll 테마](https://mmistakes.github.io/minimal-mistakes/)
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
 
-Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you :smile:.
+Minimal Mistakes는 유연한 2단 구성의 Jekyll 테마로, 개인 사이트, 블로그, 포트폴리오를 구축하는 데 적합합니다. 이름에서 알 수 있듯 스타일링은 의도적으로 미니멀하게 설계되어 있어 사용자가 원하는 대로 확장하고 커스터마이즈할 수 있습니다 :smile:.
 
-:sparkles: See what's new in the [CHANGELOG](CHANGELOG.md).
+:sparkles: 새로운 변경 사항은 [CHANGELOG](CHANGELOG.md)에서 확인하세요.
 
-**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and must be retained in the `plugins` array of `_config.yml`. Otherwise you'll encounter `Unknown tag 'include_cached'` errors at build.
+**참고:** 이 테마는 [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) 플러그인을 사용합니다. 따라서 `Gemfile`에 이 플러그인을 설치해야 하며, `_config.yml`의 `plugins` 배열에도 반드시 유지해야 합니다. 그렇지 않으면 빌드 시 `Unknown tag 'include_cached'` 오류가 발생합니다.
 
 [![Minimal Mistakes live preview][2]][1]
 
@@ -16,23 +16,23 @@ Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building per
 
 ![layout examples](screenshot-layouts.png)
 
-## Notable features
+## 주요 기능
 
-- Bundled as a "theme gem" for easier installation/upgrading.
-- Compatible with GitHub Pages.
-- Support for Jekyll's built-in Sass/SCSS preprocessor.
-- Nine different skins (color variations).
-- Several responsive layout options (single, archive index, search, splash, and paginated home page).
-- Optimized for search engines with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data.
-- Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
-- Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), [utterances](https://utteranc.es/), and [giscus](https://giscus.app/)).
-- [Google Analytics](https://www.google.com/analytics/) support.
-- [Swetrix](https://swetrix.com/) GDPR-compliant analytics support.
-- UI localized text in English (default), Arabic (عربي), Brazilian Portuguese (Português brasileiro), Bulgarian, Catalan, Chinese, Czech, Danish, Dutch, Finnish, French (Français), German (Deutsch), Greek, Hebrew, Hindi (हिंदी), Hungarian, Indonesian, Irish (Gaeilge), Italian (Italiano), Japanese, Kiswahili, Korean, Malayalam, Myanmar (Burmese), Nepali (Nepalese), Norwegian (Norsk), Persian (فارسی), Polish, Punjabi (ਪੰਜਾਬੀ), Romanian, Russian, Slovak, Spanish (Español), Swedish, Thai, Turkish (Türkçe), Ukrainian (Українська) and Vietnamese.
+- 더 쉬운 설치와 업그레이드를 위해 "theme gem" 형태로 제공됩니다.
+- GitHub Pages와 호환됩니다.
+- Jekyll 내장 Sass/SCSS 전처리기를 지원합니다.
+- 9가지 스킨(색상 변형)을 제공합니다.
+- 다양한 반응형 레이아웃 옵션(싱글, 아카이브 인덱스, 검색, 스플래시, 페이지네이션 홈 페이지)을 제공합니다.
+- [Twitter Cards](https://dev.twitter.com/cards/overview)와 [Open Graph](http://ogp.me/) 데이터를 지원해 검색 엔진 최적화에 유리합니다.
+- 선택적으로 [헤더 이미지](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [커스텀 사이드바](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [목차](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [갤러리](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), 관련 글, [브레드크럼 링크](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [내비게이션 목록](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list) 등을 지원합니다.
+- 댓글 기능을 지원합니다. ([Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), [Staticman](https://staticman.net/) 기반 정적 댓글, [utterances](https://utteranc.es/), [giscus](https://giscus.app/))
+- [Google Analytics](https://www.google.com/analytics/)를 지원합니다.
+- GDPR을 준수하는 분석 도구 [Swetrix](https://swetrix.com/)를 지원합니다.
+- UI 현지화 텍스트를 영어(기본값), 아랍어(عربي), 브라질 포르투갈어(Português brasileiro), 불가리아어, 카탈루냐어, 중국어, 체코어, 덴마크어, 네덜란드어, 핀란드어, 프랑스어(Français), 독일어(Deutsch), 그리스어, 히브리어, 힌디어(हिंदी), 헝가리어, 인도네시아어, 아일랜드어(Gaeilge), 이탈리아어(Italiano), 일본어, 스와힐리어, 한국어, 말라얄람어, 미얀마어(버마어), 네팔어, 노르웨이어(Norsk), 페르시아어(فارسی), 폴란드어, 펀자브어(ਪੰਜਾਬੀ), 루마니아어, 러시아어, 슬로바키아어, 스페인어(Español), 스웨덴어, 태국어, 터키어(Türkçe), 우크라이나어(Українська), 베트남어로 제공합니다.
 
-## Skins (color variations)
+## 스킨(색상 변형)
 
-This theme comes in 11 different skins (in addition to the default one).
+이 테마는 기본 스킨 외에 11가지 스킨을 제공합니다.
 
 | `air`                                                                                                                                                                                 | `contrast`                                                                                                                                                                                           | `dark`                                                                                                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -49,19 +49,20 @@ This theme comes in 11 different skins (in addition to the default one).
 | `catppuccin_latte` | `catppuccin_mocha` |
 | --- | --- |
 | ![catppuccin_latte skin](./assets/images/catppuccin_latte-skin-archive-large.png) | ![catppuccin_mocha skin](./assets/images/catppuccin_mocha-skin-archive-large.png) |
-## Demo pages
 
-| Name                                            | Description                                                   |
-| ----------------------------------------------- | ------------------------------------------------------------- |
-| [Post with Header Image][header-image-post]     | A post with a large header image.                             |
-| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
-| [Syntax Highlighting Post][syntax-post]         | Post displaying highlighted code.                             |
-| [Post with a Gallery][gallery-post]             | A post showing several images wrapped in `<figure>` elements. |
-| [Sample Collection Page][sample-collection]     | Single page from a collection.                                |
-| [Categories Archive][categories-archive]        | Posts grouped by category.                                    |
-| [Tags Archive][tags-archive]                    | Posts grouped by tag.                                         |
+## 데모 페이지
 
-Additional sample posts are available under [posts archive][year-archive] on the demo site. Source files for these (and the entire demo site) can be found in [`/docs`](docs).
+| 이름                                            | 설명                                                         |
+| ----------------------------------------------- | ------------------------------------------------------------ |
+| [Post with Header Image][header-image-post]     | 큰 헤더 이미지를 포함한 포스트입니다.                        |
+| [HTML Tags and Formatting Post][html-tags-post] | 테마가 다양한 일반 마크업을 어떻게 스타일링하는지 보여줍니다. |
+| [Syntax Highlighting Post][syntax-post]         | 코드 하이라이팅이 적용된 포스트입니다.                       |
+| [Post with a Gallery][gallery-post]             | 여러 이미지를 `<figure>` 요소로 감싼 포스트입니다.           |
+| [Sample Collection Page][sample-collection]     | 컬렉션의 단일 페이지 예시입니다.                             |
+| [Categories Archive][categories-archive]        | 카테고리별로 묶인 포스트입니다.                              |
+| [Tags Archive][tags-archive]                    | 태그별로 묶인 포스트입니다.                                  |
+
+추가 샘플 포스트는 데모 사이트의 [posts archive][year-archive]에서 확인할 수 있습니다. 이들에 대한 소스 파일(그리고 전체 데모 사이트)은 [`/docs`](docs)에서 찾을 수 있습니다.
 
 [header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
 [gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
@@ -72,43 +73,43 @@ Additional sample posts are available under [posts archive][year-archive] on the
 [tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
 [year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
 
-## Installation
+## 설치
 
-There are three ways to install: as a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes), as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible), or forking/directly copying all of the theme files into your project.
+설치 방법은 세 가지입니다. [gem 기반 테마](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes), [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) 방식(GitHub Pages 호환), 또는 테마 파일 전체를 프로젝트에 포크하거나 직접 복사하는 방식입니다.
 
-### Gem-based method
+### Gem 기반 방법
 
-With Gem-based themes, directories such as the `assets`, `_layouts`, `_includes`, and `_sass` are stored in the theme’s gem, hidden from your immediate view. Yet all of the necessary directories will be read and processed during Jekyll’s build process.
+Gem 기반 테마를 사용하면 `assets`, `_layouts`, `_includes`, `_sass` 같은 디렉터리는 테마의 gem 안에 저장되어 바로 보이지 않습니다. 하지만 필요한 모든 디렉터리는 Jekyll 빌드 과정에서 읽히고 처리됩니다.
 
-This allows for easier installation and updating as you don't have to manage any of the theme files. To install:
+즉, 테마 파일을 직접 관리할 필요가 없어 설치와 업데이트가 더 쉬워집니다. 설치 방법은 다음과 같습니다.
 
-1. Add the following to your `Gemfile`:
+1. `Gemfile`에 아래 내용을 추가합니다.
 
    ```ruby
    gem "minimal-mistakes-jekyll"
    ```
 
-2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+2. 다음 [Bundler](http://bundler.io/) 명령으로 포함된 gem을 가져오고 업데이트합니다.
 
    ```bash
    bundle
    ```
 
-3. Set the `theme` in your project's Jekyll `_config.yml` file:
+3. 프로젝트의 Jekyll `_config.yml` 파일에 `theme`를 설정합니다.
 
    ```yaml
    theme: minimal-mistakes-jekyll
    ```
 
-To update the theme run `bundle update`.
+테마를 업데이트하려면 `bundle update`를 실행하세요.
 
-### Remote theme method
+### Remote theme 방법
 
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
+Remote theme는 Gem 기반 테마와 유사하지만, `Gemfile` 변경이나 화이트리스트 등록이 필요하지 않아 GitHub Pages로 호스팅하는 사이트에 적합합니다.
 
-To install:
+설치 방법은 다음과 같습니다.
 
-1. Create/replace the contents of your `Gemfile` with the following:
+1. `Gemfile` 내용을 아래와 같이 생성하거나 교체합니다.
 
    ```ruby
    source "https://rubygems.org"
@@ -117,71 +118,71 @@ To install:
    gem "jekyll-include-cache", group: :jekyll_plugins
    ```
 
-2. Add `jekyll-include-cache` to the `plugins` array of your `_config.yml`.
+2. `_config.yml`의 `plugins` 배열에 `jekyll-include-cache`를 추가합니다.
 
-3. Fetch and update bundled gems by running the following [Bundler](https://bundler.io/) command:
+3. 다음 [Bundler](https://bundler.io/) 명령으로 포함된 gem을 가져오고 업데이트합니다.
 
    ```bash
    bundle
    ```
 
-4. Add `remote_theme: "mmistakes/minimal-mistakes@4.28.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+4. `_config.yml` 파일에 `remote_theme: "mmistakes/minimal-mistakes@4.28.0"`를 추가합니다. 기존의 다른 `theme:` 또는 `remote_theme:` 항목은 제거합니다.
 
 <!--
-  Dev note: The version number is currently hard-coded in these files:
+  개발자 참고: 버전 번호는 현재 다음 파일들에 하드코딩되어 있습니다.
 
     - package.json
-    - README.md (this file)
+    - README.md (이 파일)
     - docs/_data/theme.yml
-    - docs/_pages/home.md (in Front Matter "excerpt")
+    - docs/_pages/home.md (Front Matter의 "excerpt")
 
-  `package.json` holds the authoritative version number, and the others can be updated with `bundle exec rake version`.
+  `package.json`이 기준이 되는 버전 번호를 가지고 있으며, 나머지는 `bundle exec rake version`으로 업데이트할 수 있습니다.
 
-  The following files should also be regenerated:
+  다음 파일들도 다시 생성해야 합니다.
 
     - _includes/copyright.html, _includes/copyright.js, _sass/minimal-mistakes/_copyright.scss
-      (Run `bundle exec rake clean` then `bundle exec rake copyright` - all three references `package.json`)
-    - assets/js/main.min.js (Run `bundle exec rake js`, references `_includes/copyright.js`)
+      (`bundle exec rake clean` 후 `bundle exec rake copyright` 실행 - 세 파일 모두 `package.json`을 참조합니다)
+    - assets/js/main.min.js (`bundle exec rake js` 실행, `_includes/copyright.js`를 참조)
 
-  *Tip*: The default Rake task will update all of the above files at once.
+  *팁*: 기본 Rake 작업은 위 파일들을 한 번에 모두 업데이트합니다.
 
-  Additionally, the license year is hard-coded in these files and are NOT covered by a Rake task:
+  또한 라이선스 연도는 다음 파일들에 하드코딩되어 있으며, 이는 Rake 작업으로 처리되지 않습니다.
 
-    - README.md (this file, near the end)
+    - README.md (이 파일, 끝부분 근처)
     - LICENSE
 -->
 
-**Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
+**예제가 필요하신가요?** GitHub Pages 호스팅 사이트를 가장 빠르게 시작하려면 [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate)를 사용하세요. 스타터에서 새 저장소를 생성한 뒤 샘플 콘텐츠를 자신의 내용으로 교체하고 필요에 맞게 설정하면 됩니다.
 
-## Usage
+## 사용법
 
-For detailed instructions on how to configure, customize, add/migrate content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+설정, 커스터마이즈, 콘텐츠 추가/마이그레이션 등에 대한 자세한 안내는 [테마 문서](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)를 참고하세요.
 
-## Contributing
+## 기여하기
 
-Found a typo in the documentation or interested in [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
+문서에서 오타를 발견했거나 [버그 수정](https://github.com/mmistakes/minimal-mistakes/issues)에 관심이 있나요? 그렇다면 [이슈](https://github.com/mmistakes/minimal-mistakes/issues/new)나 [풀 리퀘스트](https://help.github.com/articles/using-pull-requests/)를 제출해 주세요. 첫 풀 리퀘스트라면 먼저 [GitHub Flow](https://guides.github.com/introduction/flow/)를 읽어보는 것이 도움이 될 수 있습니다.
 
-For help with using the theme or general Jekyll support questions, please use the [Jekyll Talk forums](https://talk.jekyllrb.com/).
+테마 사용법이나 일반적인 Jekyll 지원 질문은 [Jekyll Talk 포럼](https://talk.jekyllrb.com/)을 이용하세요.
 
-### Pull Requests
+### 풀 리퀘스트
 
-When submitting a pull request:
+풀 리퀘스트를 제출할 때는 다음 과정을 따르세요.
 
-1. Clone the repo.
-2. Create a branch off of `master` and give it a meaningful name (e.g. `my-awesome-new-feature`).
-3. Open a pull request on GitHub and describe the feature or fix.
+1. 저장소를 클론합니다.
+2. `master`에서 브랜치를 만들고 의미 있는 이름을 붙입니다. (예: `my-awesome-new-feature`)
+3. GitHub에서 풀 리퀘스트를 열고 기능 또는 수정 내용을 설명합니다.
 
-Theme documentation and demo pages can be found in the [`/docs`](docs) if submitting improvements, typo corrections, etc.
+개선 사항, 오타 수정 등을 제출할 경우 테마 문서와 데모 페이지는 [`/docs`](docs)에서 확인할 수 있습니다.
 
-## Development
+## 개발
 
-To set up your environment to develop this theme, run `bundle install`.
+이 테마 개발 환경을 설정하려면 `bundle install`을 실행하세요.
 
-To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
+테마를 테스트하려면 `bundle exec rake preview`를 실행한 뒤 브라우저에서 `http://localhost:4000/test/`를 여세요. 그러면 `test/` 디렉터리의 콘텐츠를 사용하는 Jekyll 서버가 시작됩니다. 테마와 테스트 사이트를 수정하면 자동으로 다시 생성되며, 브라우저를 새로고침하면 변경 사항을 볼 수 있습니다.
 
-## Credits
+## 크레딧
 
-### Creator
+### 제작자
 
 **Michael Rose**
 
@@ -189,13 +190,13 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 - <https://twitter.com/mmistakes>
 - <https://github.com/mmistakes>
 
-### Icons + Demo Images:
+### 아이콘 + 데모 이미지
 
 - [The Noun Project](https://thenounproject.com) - Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
 - [Font Awesome](http://fontawesome.io/)
 - [Unsplash](https://unsplash.com/)
 
-### Other:
+### 기타
 
 - [Jekyll](http://jekyllrb.com/)
 - [jQuery](http://jquery.com/)
@@ -210,84 +211,70 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 - [Lunr](http://lunrjs.com)
 - [Clipboard.js](https://clipboardjs.com)
 
-## License
+## 라이선스
 
-The MIT License (MIT)
+MIT 라이선스 (MIT)
 
 Copyright (c) 2013-2024 Michael Rose and contributors
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+이 소프트웨어 및 관련 문서 파일(이하 "소프트웨어")의 사본을 취득한 모든 사람에게, 소프트웨어를 제한 없이 다룰 수 있는 권한을 무상으로 부여합니다. 여기에는 소프트웨어를 사용, 복사, 수정, 병합, 게시, 배포, 재라이선스, 판매할 권리와, 그러한 행위를 허용받은 사람에게 소프트웨어를 제공할 권리가 포함됩니다. 단, 다음 조건을 따라야 합니다.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+위 저작권 고지와 본 허가 고지는 소프트웨어의 모든 사본 또는 중요한 부분에 포함되어야 합니다.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+소프트웨어는 "있는 그대로" 제공되며, 상품성, 특정 목적 적합성, 비침해성에 대한 보증을 포함하되 이에 한정되지 않는 어떠한 명시적 또는 묵시적 보증도 제공되지 않습니다. 어떤 경우에도 저작권자 또는 저자는 소프트웨어의 사용 또는 기타 취급과 관련하여 발생하는 계약, 불법행위 또는 기타 사유의 청구, 손해 또는 기타 책임에 대해 책임을 지지 않습니다.
 
-Minimal Mistakes incorporates icons from [The Noun Project](https://thenounproject.com/) 
-creators Garrett Knoll, Arthur Shlain, and tracy tam.
-Icons are distributed under Creative Commons Attribution 3.0 United States (CC BY 3.0 US).
+Minimal Mistakes는 [The Noun Project](https://thenounproject.com/)의 Garrett Knoll, Arthur Shlain, tracy tam이 제작한 아이콘을 포함합니다.
+이 아이콘들은 Creative Commons Attribution 3.0 United States (CC BY 3.0 US) 라이선스로 배포됩니다.
 
-Minimal Mistakes incorporates [Font Awesome](http://fontawesome.io/),
+Minimal Mistakes는 [Font Awesome](http://fontawesome.io/)을 포함합니다.
 Copyright (c) 2017 Dave Gandy.
-Font Awesome is distributed under the terms of the [SIL OFL 1.1](http://scripts.sil.org/OFL) 
-and [MIT License](http://opensource.org/licenses/MIT).
+Font Awesome은 [SIL OFL 1.1](http://scripts.sil.org/OFL) 및 [MIT License](http://opensource.org/licenses/MIT) 조건에 따라 배포됩니다.
 
-Minimal Mistakes incorporates photographs from [Unsplash](https://unsplash.com).
+Minimal Mistakes는 [Unsplash](https://unsplash.com/)의 사진을 포함합니다.
 
-Minimal Mistakes incorporates [Susy](http://susy.oddbird.net/),
+Minimal Mistakes는 [Susy](http://susy.oddbird.net/)를 포함합니다.
 Copyright (c) 2017, Miriam Eric Suzanne.
-Susy is distributed under the terms of the [BSD 3-clause "New" or "Revised" License](https://opensource.org/licenses/BSD-3-Clause).
+Susy는 [BSD 3-clause "New" or "Revised" License](https://opensource.org/licenses/BSD-3-Clause) 조건에 따라 배포됩니다.
 
-Minimal Mistakes incorporates [Breakpoint](http://breakpoint-sass.com/).
-Breakpoint is distributed under the terms of the [MIT/GPL Licenses](http://opensource.org/licenses/MIT).
+Minimal Mistakes는 [Breakpoint](http://breakpoint-sass.com/)를 포함합니다.
+Breakpoint는 [MIT/GPL Licenses](http://opensource.org/licenses/MIT) 조건에 따라 배포됩니다.
 
-Minimal Mistakes incorporates [FitVids.js](https://github.com/davatron5000/FitVids.js/),
+Minimal Mistakes는 [FitVids.js](https://github.com/davatron5000/FitVids.js/)를 포함합니다.
 Copyright (c) 2013 Dave Rubert and Chris Coyier.
-FitVids is distributed under the terms of the [WTFPL License](http://www.wtfpl.net/).
+FitVids는 [WTFPL License](http://www.wtfpl.net/) 조건에 따라 배포됩니다.
 
-Minimal Mistakes incorporates [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/),
+Minimal Mistakes는 [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)을 포함합니다.
 Copyright (c) 2014-2016 Dmitry Semenov, http://dimsemenov.com.
-Magnific Popup is distributed under the terms of the MIT License.
+Magnific Popup은 MIT 라이선스 조건에 따라 배포됩니다.
 
-Minimal Mistakes incorporates [Smooth Scroll](http://github.com/cferdinandi/smooth-scroll),
+Minimal Mistakes는 [Smooth Scroll](http://github.com/cferdinandi/smooth-scroll)을 포함합니다.
 Copyright (c) 2019 Chris Ferdinandi.
-Smooth Scroll is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Smooth Scroll은 [MIT License](http://opensource.org/licenses/MIT) 조건에 따라 배포됩니다.
 
-Minimal Mistakes incorporates [Gumshoejs](http://github.com/cferdinandi/gumshoe),
+Minimal Mistakes는 [Gumshoejs](http://github.com/cferdinandi/gumshoe)를 포함합니다.
 Copyright (c) 2019 Chris Ferdinandi.
-Gumshoejs is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Gumshoejs는 [MIT License](http://opensource.org/licenses/MIT) 조건에 따라 배포됩니다.
 
-Minimal Mistakes incorporates [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/),
+Minimal Mistakes는 [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/)를 포함합니다.
 Copyright (c) 2010 "Cowboy" Ben Alman.
-jQuery throttle / debounce is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+jQuery throttle / debounce는 [MIT License](http://opensource.org/licenses/MIT) 조건에 따라 배포됩니다.
 
-Minimal Mistakes incorporates [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav),
+Minimal Mistakes는 [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav)를 포함합니다.
 Copyright (c) 2015 Luke Jackson.
-GreedyNav.js is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+GreedyNav.js는 [MIT License](http://opensource.org/licenses/MIT) 조건에 따라 배포됩니다.
 
-Minimal Mistakes incorporates [Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array),
+Minimal Mistakes는 [Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array)를 포함합니다.
 Copyright (c) 2015 Max White <mushishi78@gmail.com>.
-Jekyll Group-By-Array is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Jekyll Group-By-Array는 [MIT License](http://opensource.org/licenses/MIT) 조건에 따라 배포됩니다.
 
-Minimal Mistakes incorporates [@allejo's Pure Liquid Jekyll Table of Contents](https://allejo.io/blog/a-jekyll-toc-in-liquid-only/),
+Minimal Mistakes는 [@allejo's Pure Liquid Jekyll Table of Contents](https://allejo.io/blog/a-jekyll-toc-in-liquid-only/)를 포함합니다.
 Copyright (c) 2017 Vladimir Jimenez.
-Pure Liquid Jekyll Table of Contents is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Pure Liquid Jekyll Table of Contents는 [MIT License](http://opensource.org/licenses/MIT) 조건에 따라 배포됩니다.
 
-Minimal Mistakes incorporates [Lunr](http://lunrjs.com),
+Minimal Mistakes는 [Lunr](http://lunrjs.com)을 포함합니다.
 Copyright (c) 2018 Oliver Nightingale.
-Lunr is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Lunr는 [MIT License](http://opensource.org/licenses/MIT) 조건에 따라 배포됩니다.
 
-Minimal Mistakes incorporates [clipboard.js](https://clipboardjs.com/),
+Minimal Mistakes는 [clipboard.js](https://clipboardjs.com/)를 포함합니다.
 Copyright (c) 2021 Zeno Rocha.
-Clipboard.js is distributed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+Clipboard.js는 [MIT License](https://opensource.org/licenses/MIT) 조건에 따라 배포됩니다.
